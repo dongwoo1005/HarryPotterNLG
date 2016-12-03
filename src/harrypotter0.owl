@@ -61,7 +61,6 @@
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ChildOf"/>
-        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#SonOf"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Child"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Parent"/>
     </owl:ObjectProperty>
@@ -125,7 +124,6 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isParentOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isParentOf">
-        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#FatherOf"/>
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ParentOf"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Child"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Parent"/>
@@ -232,6 +230,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Child">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;FamilyEntity"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Child"/>
     </owl:Class>
     
 
@@ -325,6 +324,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Headmaster">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Professor"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Headmaster"/>
     </owl:Class>
     
 
@@ -358,6 +358,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;MagicalBeing">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Being"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#MagicalBeing"/>
     </owl:Class>
     
 
@@ -427,6 +428,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Phoenix">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Phoenix"/>
     </owl:Class>
     
 
@@ -443,6 +445,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Professor">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Professor"/>
     </owl:Class>
     
 
@@ -465,6 +468,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;SchoolOfMagic">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolEntity"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#SchoolOfMagic"/>
     </owl:Class>
     
 
@@ -539,6 +543,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Wizard">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Wizard"/>
     </owl:Class>
     
 
@@ -559,6 +564,7 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;AlbusDumbledore">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Headmaster"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#AlbusDumbledore"/>
         <untitled-ontology-229:isOwnerOf rdf:resource="&untitled-ontology-229;Fawkes"/>
     </owl:NamedIndividual>
     
@@ -568,6 +574,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;ArthurWeasley">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ArthurWeasley"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;GinnyWeasley"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;RonaldWeasley"/>
     </owl:NamedIndividual>
@@ -632,6 +639,7 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;GinnyWeasley">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#GinnyWeasley"/>
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;ArthurWeasley"/>
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
@@ -670,6 +678,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hedwig">
         <rdf:type rdf:resource="&untitled-ontology-229;Owl"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Hedwig"/>
     </owl:NamedIndividual>
     
 
@@ -690,6 +699,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hogwarts">
         <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Hogwarts"/>
     </owl:NamedIndividual>
     
 
@@ -718,6 +728,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;LilyPotter">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#LilyPotter"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;HarryPotter"/>
     </owl:NamedIndividual>
     
@@ -763,6 +774,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;MollyWeasley">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#MollyWeasley"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;GinnyWeasley"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;RonaldWeasley"/>
     </owl:NamedIndividual>
@@ -834,6 +846,7 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;RonaldWeasley">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#RonaldWeasley"/>
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;ArthurWeasley"/>
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
