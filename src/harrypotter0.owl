@@ -61,6 +61,7 @@
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf">
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ChildOf"/>
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#SonOf"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Child"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Parent"/>
     </owl:ObjectProperty>
@@ -124,6 +125,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isParentOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isParentOf">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#FatherOf"/>
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ParentOf"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Child"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Parent"/>
@@ -642,6 +644,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;GryffindorHouse">
         <rdf:type rdf:resource="&untitled-ontology-229;House"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#GryffindorHouse"/>
         <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
@@ -879,6 +882,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;TheCloakOfInvisibility">
         <rdf:type rdf:resource="&untitled-ontology-229;Cloak"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#TheClockOfInvisibility"/>
     </owl:NamedIndividual>
     
 
