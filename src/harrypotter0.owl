@@ -60,6 +60,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isChildOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isChildOf">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ChildOf"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Child"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Parent"/>
     </owl:ObjectProperty>
@@ -79,6 +80,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isHouseOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isHouseOf">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HouseOf"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;House"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
     </owl:ObjectProperty>
@@ -122,6 +124,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isParentOf -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isParentOf">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#ParentOf"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Child"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Parent"/>
         <owl:inverseOf rdf:resource="&untitled-ontology-229;isChildOf"/>
@@ -328,6 +331,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;House">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;SchoolEntity"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#House"/>
     </owl:Class>
     
 
@@ -396,6 +400,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Owl">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Owl"/>
     </owl:Class>
     
 
@@ -466,6 +471,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Shapeshifter">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;MagicalBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Shapeshifter"/>
     </owl:Class>
     
 
@@ -670,6 +676,7 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;HermoineGranger">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HermioneGranger"/>
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
@@ -698,6 +705,7 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;JamesPotter">
         <rdf:type rdf:resource="&untitled-ontology-229;GoodWizard"/>
         <rdf:type rdf:resource="&untitled-ontology-229;Shapeshifter"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#JamesPotter"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;HarryPotter"/>
     </owl:NamedIndividual>
     
