@@ -90,6 +90,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/isOwnedBy -->
 
     <owl:ObjectProperty rdf:about="&untitled-ontology-229;isOwnedBy">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#OwnedBy"/>
         <rdfs:range rdf:resource="&untitled-ontology-229;Wizard"/>
         <rdfs:domain>
             <owl:Class>
@@ -277,6 +278,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;DarkWizard">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Wizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#DarkWizard"/>
     </owl:Class>
     
 
@@ -285,6 +287,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Deatheater">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;DarkWizard"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Deatheater"/>
     </owl:Class>
     
 
@@ -387,6 +390,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Muggle">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;NonMagicalBeing"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Muggle"/>
     </owl:Class>
     
 
@@ -486,6 +490,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Snake">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Snake"/>
     </owl:Class>
     
 
@@ -535,6 +540,7 @@
 
     <owl:Class rdf:about="&untitled-ontology-229;Werewolf">
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Creature"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Werewolf"/>
     </owl:Class>
     
 
@@ -593,6 +599,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;DracoMalfoy">
         <rdf:type rdf:resource="&untitled-ontology-229;Student"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#DracoMalfoy"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;LuciusMalfoy"/>
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;SlytherinHouse"/>
@@ -604,6 +611,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;DudleyDursley">
         <rdf:type rdf:resource="&untitled-ontology-229;Muggle"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#DudleyDursley"/>
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;PetuniaDursley"/>
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;VernonDursley"/>
     </owl:NamedIndividual>
@@ -747,6 +755,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;LuciusMalfoy">
         <rdf:type rdf:resource="&untitled-ontology-229;Deatheater"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#LuciusMalfoy"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;DracoMalfoy"/>
     </owl:NamedIndividual>
     
@@ -802,6 +811,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;PetuniaDursley">
         <rdf:type rdf:resource="&untitled-ontology-229;Muggle"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#PetuniaDursley"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;DudleyDursley"/>
     </owl:NamedIndividual>
     
@@ -886,6 +896,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;SlytherinHouse">
         <rdf:type rdf:resource="&untitled-ontology-229;House"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#SlytherinHouse"/>
         <untitled-ontology-229:isHouseOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
     </owl:NamedIndividual>
     
@@ -904,6 +915,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;VernonDursley">
         <rdf:type rdf:resource="&untitled-ontology-229;Muggle"/>
+        <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#VernonDursley"/>
         <untitled-ontology-229:isParentOf rdf:resource="&untitled-ontology-229;DudleyDursley"/>
     </owl:NamedIndividual>
 </rdf:RDF>

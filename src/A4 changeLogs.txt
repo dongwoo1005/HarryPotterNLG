@@ -1,0 +1,31 @@
+CS 486 - A4
+HarryPortderNLG
+
+D Son & H Cho
+
+Note: + indicates addition, * indicates update or change
+
+V1.3
+Lexon:
+	+ ownByVerb
+	+ dark
+	+ housemember
+	+ snake
+	+ deatheater
+	+ lucius/draco-malfoy
+	+ muggle
+	+ dudley/petunia/vernon-dursley
+
+NLNames:
+	+ HouseMember
+	+ Muggle
+	+ Snake
+	+ DarkWizard
+	+ DeathEater
+	+ Lucius/DracoMalfoy
+	+ Dudley/Petunia/VernonDursley
+
+SentencePlans:
+	* HouseMemberOf
+	+ OwnedBy
+
