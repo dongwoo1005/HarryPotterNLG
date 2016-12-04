@@ -5,7 +5,7 @@ D Son & H Cho
 
 Note: + indicates addition, * indicates update or change
 
-V1.3
+--V1.3
 Lexon:
 	+ ownByVerb
 	+ dark
@@ -29,3 +29,37 @@ SentencePlans:
 	* HouseMemberOf
 	+ OwnedBy
 
+
+
+--V1.4
+
+Classes:
+	+ [Mother] under [Parent]
+	+ [Father] under [Parent]
+
+Object Property:
+	+ isMotherOf
+	+ isFatherOf
+	+ isClassMateOf{D:Student, R:Student}
+		added to individuals: HarryPotter, HermioneGranger, RonaldWeasley
+	+ hasStudent{D:House, R:Student}
+		added to individuals: GryffindorHouse(HarryPotter, HermioneGranger, RonaldWeasley, GinnyWeasley), SlytherinHouse(DracoMalfoy)
+
+Lexicon:
+	+ mother
+	+ father
+	+ classmate
+	+ nagini
+	+ belongVerb
+
+NLNames:
+	+ Mother
+	+ Father
+
+SentencePlans:
+	+ Father Of
+	+ MotherOf
+	+ ClassMateOf
+	+ hasStudent
+
+** TODO: for SentencePlans, the verb doesn't detect if the filler is one or multiple.
