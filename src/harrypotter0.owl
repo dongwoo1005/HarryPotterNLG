@@ -968,6 +968,7 @@
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
         <isClassMateOf rdf:resource="&untitled-ontology-229;HarryPotter"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
+        <isWifeOf rdf:resource="&untitled-ontology-229;RonaldWeasley"/>
         <isClassMateOf rdf:resource="&untitled-ontology-229;RonaldWeasley"/>
     </owl:NamedIndividual>
     
@@ -1135,6 +1136,7 @@
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;ArthurWeasley"/>
         <untitled-ontology-229:isHouseMemberOf rdf:resource="&untitled-ontology-229;GryffindorHouse"/>
         <isClassMateOf rdf:resource="&untitled-ontology-229;HarryPotter"/>
+        <isHusbandOf rdf:resource="&untitled-ontology-229;HermoineGranger"/>
         <isClassMateOf rdf:resource="&untitled-ontology-229;HermoineGranger"/>
         <untitled-ontology-229:isStudentOf rdf:resource="&untitled-ontology-229;Hogwarts"/>
         <untitled-ontology-229:isChildOf rdf:resource="&untitled-ontology-229;MollyWeasley"/>
