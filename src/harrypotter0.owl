@@ -63,6 +63,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasCourses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasCourses">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#teachesCourses"/>
+        <rdfs:range rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasStudent -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#hasStudent">
@@ -239,7 +249,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/hasAge -->
 
     <owl:DatatypeProperty rdf:about="&untitled-ontology-229;hasAge">
-        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#HasAgeOf"/>
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#isNYearsOld"/>
         <rdfs:domain rdf:resource="&untitled-ontology-229;Being"/>
         <rdfs:range rdf:resource="&xsd;positiveInteger"/>
     </owl:DatatypeProperty>
@@ -265,11 +275,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CoreCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CoreCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Daughter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Daughter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Female"/>
         <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#ElectiveCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#ElectiveCourse">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
     </owl:Class>
     
 
@@ -341,7 +367,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/CareOfMagicalCreaturesCourse -->
 
     <owl:Class rdf:about="&untitled-ontology-229;CareOfMagicalCreaturesCourse">
-        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#ElectiveCourse"/>
     </owl:Class>
     
 
@@ -357,7 +383,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/CharmsCourse -->
 
     <owl:Class rdf:about="&untitled-ontology-229;CharmsCourse">
-        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CoreCourse"/>
     </owl:Class>
     
 
@@ -575,7 +601,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/PotionsCourse -->
 
     <owl:Class rdf:about="&untitled-ontology-229;PotionsCourse">
-        <rdfs:subClassOf rdf:resource="&untitled-ontology-229;Course"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CoreCourse"/>
     </owl:Class>
     
 
@@ -703,6 +729,36 @@
     <!-- http://www.aueb.gr/users/ion/nlowl/dgr#isInterestedIn -->
 
     <owl:NamedIndividual rdf:about="http://www.aueb.gr/users/ion/nlowl/dgr#isInterestedIn"/>
+    
+
+
+    <!-- http://www.aueb.gr/users/ion/nlowl/dgr#isNYearsOld -->
+
+    <owl:NamedIndividual rdf:about="http://www.aueb.gr/users/ion/nlowl/dgr#isNYearsOld"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CareOfMagicalCreature101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CareOfMagicalCreature101">
+        <rdf:type rdf:resource="&untitled-ontology-229;CareOfMagicalCreaturesCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Charms101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Charms101">
+        <rdf:type rdf:resource="&untitled-ontology-229;CharmsCourse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Potions101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Potions101">
+        <rdf:type rdf:resource="&untitled-ontology-229;PotionsCourse"/>
+    </owl:NamedIndividual>
     
 
 
@@ -864,6 +920,9 @@
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;Hogwarts">
         <rdf:type rdf:resource="&untitled-ontology-229;SchoolOfMagic"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#Hogwarts"/>
+        <hasCourses rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#CareOfMagicalCreature101"/>
+        <hasCourses rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Charms101"/>
+        <hasCourses rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Potions101"/>
     </owl:NamedIndividual>
     
 
@@ -910,7 +969,6 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229/LuciusMalfoy -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-229;LuciusMalfoy">
-        <rdf:type rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Father"/>
         <nlowl:hasNLName rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#LuciusMalfoy"/>
         <isFatherOf rdf:resource="&untitled-ontology-229;DracoMalfoy"/>
     </owl:NamedIndividual>
@@ -1081,7 +1139,13 @@
         <isFatherOf rdf:resource="&untitled-ontology-229;DudleyDursley"/>
     </owl:NamedIndividual>
     <rdf:Description>
+        <nlowl:forSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#isNYearsOld"/>
+    </rdf:Description>
+    <rdf:Description>
         <nlowl:forSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#isInterestedIn"/>
+    </rdf:Description>
+    <rdf:Description>
+        <nlowl:forSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#isNYearsOld"/>
     </rdf:Description>
     <rdf:Description>
         <nlowl:forSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#isInterestedIn"/>
