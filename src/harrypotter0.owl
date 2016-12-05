@@ -130,6 +130,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isMarriedTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isMarriedTo">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#WifeOf"/>
         <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#isMarriedTo"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isMarriedTo"/>
     </owl:ObjectProperty>
@@ -159,6 +160,7 @@
     <!-- http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isWifeOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isWifeOf">
+        <nlowl:hasSentencePlan rdf:resource="http://www.aueb.gr/users/ion/nlowl/dgr#WifeOf"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Female"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#Male"/>
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/cdimarco/ontologies/2016/10/untitled-ontology-229#isMarriedTo"/>
